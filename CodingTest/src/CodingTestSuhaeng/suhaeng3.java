@@ -21,6 +21,6 @@ class buchaeggol {
 		return (rad*rad*3.14)/4;
 	}
 	double circum(double rad) {
-		return (rad*2*3.14)/4;
+		return (rad*2*3.14)/4 + rad*2;
 	}
 }
