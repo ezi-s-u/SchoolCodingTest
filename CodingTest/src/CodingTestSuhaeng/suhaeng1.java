@@ -14,16 +14,11 @@ public class suhaeng1 {
 		
 		for(int i = 0; i < 5; i++) {
 			A[i] = sc.nextInt();
+			res[i] = A[i];
 		}
 		for(int i = 0; i < 5; i++) {
 			B[i] = sc.nextInt();
-		}
-		
-		for(int i = 0; i < 5; i++) {
-			res[i] = A[i];
-		}
-		for(int i = 5; i < res.length; i++) {
-			res[i] = B[i-5];
+			res[i+5] = B[i];
 		}
 		
 		Arrays.sort(res);
