@@ -29,14 +29,20 @@ public class suhaeng2 {
 		}
 		System.out.println("");
 		
-		System.out.println("======================================");
+		System.out.println("=======================================");
 		System.out.println("순번   점수1    점수2    점수3   최고점   평점");
 		for(int i = 0; i < per; i++) {
-			System.out.print((i+1)+"   ");
-			System.out.printf("%5d    %4d    %4d    %3d",score[i][0],score[i][1],score[i][2],max_sco[i]);
-			System.out.println("");
+			System.out.print(" "+(i+1)+"   ");
+			System.out.printf("%4d    %4d    %4d    %3d",score[i][0],score[i][1],score[i][2],max_sco[i]);
+			switch(max_sco[i]/10) {
+			case 9: case 10: System.out.println("     "+5); break;
+			case 8: System.out.println("    "+4); break;
+			case 7: System.out.println("    "+3); break;
+			case 6: System.out.println("    "+2); break;
+			default : System.out.println("    "+1);
+			}
 		}
-		System.out.println("======================================");
+		System.out.println("=======================================");
 	}
 
 }
