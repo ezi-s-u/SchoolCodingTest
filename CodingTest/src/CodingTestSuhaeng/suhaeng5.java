@@ -15,7 +15,7 @@ public class suhaeng5 {
 				total += score[i][j];
 			}
 		}
-		System.out.printf("3³â°£ ÀÇ Æò±Õ : %.2f",total/3);
+		System.out.printf("3³â°£ ÀÇ Æò±Õ : %.2f", total/6);
 	}
 
 }
