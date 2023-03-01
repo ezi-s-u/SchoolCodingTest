@@ -11,6 +11,7 @@ public class suhaeng1 {
 		int A[] = new int[5];
 		int B[] = new int[5];
 		int res[] = new int[10];
+		int tmp;
 		
 		System.out.print("첫번째 배열의 데이타 : ");
 		for(int i = 0; i < 5; i++) {
@@ -24,7 +25,16 @@ public class suhaeng1 {
 			res[i+5] = B[i];
 		}
 		
-		Arrays.sort(res);
+		//Arrays.sort(res);
+		for(int i = 0; i < res.length-1; i++) {
+			for(int j = i+1; j < res.length; j++) {
+				if(res[i] > res[j]) {
+					tmp = res[j];
+					res[j] = res[i];
+					res[i] = tmp;
+				}
+			}
+		}
 		
 		System.out.print("병합된 배열의 데이타 : ");
 		for(int i = 0; i < res.length; i++) {
