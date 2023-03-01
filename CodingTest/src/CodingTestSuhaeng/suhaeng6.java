@@ -6,23 +6,30 @@ public class suhaeng6 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		for(int i = 1; i <= 3; i++) {
+		Account acc[] = new Account[3];
+		for(int i = 0; i < 3; i++) {
 			System.out.println("================================");
 			System.out.print("계좌번호 입력 : ");
-			Account acc = new Account(sc.next());
-			acc.balancePrint();
+			acc[i] = new Account(sc.next());
+			acc[i].balancePrint();
 			System.out.println();
 			
 			System.out.print("입금할 금액 : ");
-			acc.deposi(sc.nextInt());
-			acc.balancePrint();
+			acc[i].deposi(sc.nextInt());
+			acc[i].balancePrint();
 			System.out.println();
 			
 			System.out.print("출금할 금액 : ");
-			acc.withdraw(sc.nextInt());
-			acc.balancePrint();
+			acc[i].withdraw(sc.nextInt());
+			acc[i].balancePrint();
 			System.out.println();
 		}
+		System.out.println("================================");
+		System.out.println("계좌번호            잔액");
+		for(int i = 1; i <= 3; i++) {
+			
+		}
+		System.out.println("================================");
 	}
 
 }
