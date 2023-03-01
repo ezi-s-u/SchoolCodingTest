@@ -37,11 +37,9 @@ public class suhaeng1 {
 		}
 		
 		System.out.print("병합된 배열의 데이타 : ");
-		for(int i = 0; i < res.length; i++) {
-			if(i > 0 && res[i-1]!=res[i]) {
-				System.out.print(res[i]+" ");
-			} else if(i == 0) {
-				System.out.print(res[i]+" ");
+		for(int i = 1; i < res.length; i++) {
+			if(res[i-1]!=res[i]) {
+				System.out.print(res[i-1]+" ");
 			}
 		}
 	}
