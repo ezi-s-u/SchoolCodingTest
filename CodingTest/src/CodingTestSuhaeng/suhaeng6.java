@@ -26,8 +26,10 @@ public class suhaeng6 {
 		}
 		System.out.println("================================");
 		System.out.println("°èÁÂ¹øÈ£            ÀÜ¾×");
-		for(int i = 1; i <= 3; i++) {
-			
+		System.out.println("================================");
+		for(int i = 0; i < 3; i++) {
+			System.out.printf("%-17s %-14d",acc[i].acc_num,acc[i].amo);
+			System.out.println();
 		}
 		System.out.println("================================");
 	}
