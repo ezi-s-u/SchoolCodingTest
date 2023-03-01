@@ -11,6 +11,11 @@ public class suhaeng6 {
 			System.out.print("계좌번호 입력 : ");
 			Account acc = new Account(sc.next());
 			acc.balancePrint();
+			System.out.println();
+			
+			System.out.print("입금할 금액 : ");
+			acc.deposi(sc.nextInt());
+			acc.balancePrint();
 		}
 	}
 
@@ -23,7 +28,6 @@ class Account {
 		acc_num = a;
 	}
 	void deposi(int amo) {
-		System.out.print("입금할 금액 : ");
 		this.amo += amo;
 	}
 	void balancePrint() {
