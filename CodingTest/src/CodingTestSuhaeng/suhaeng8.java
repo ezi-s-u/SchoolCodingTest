@@ -19,5 +19,10 @@ public class suhaeng8 {
 				total += sale[i][j];
 			}
 		}
+		System.out.println("             1사분기   2사분기   3사분기   4사분기  연간판매량  누적판매량");
+		for(int i = 0; i < sale.length; i++) {
+			System.out.print((2019+i)+"년도 : ");
+			System.out.printf("%-8d %-8d %-8d %-8d %-8d %-8d\n",sale[i][0],sale[i][1],sale[i][2],sale[i][3],year_sale[i],total);
+		}
 	}
 }
