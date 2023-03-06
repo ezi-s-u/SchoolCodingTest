@@ -23,4 +23,23 @@ class Calculate {
 		a = a1;
 		b = a2;
 	}
+	void Plus() {
+		System.out.println(a+" + "+b+" = "+(a+b));
+	}
+	void Minus() {
+		System.out.println(a+" - "+b+" = "+(a-b));
+	}
+	void Mult() {
+		System.out.println(a+" * "+b+" = "+(a*b));
+	}
+	void Divide() {
+		System.out.printf("a / b = %.1f",(double)(a/b));
+	}
+	void printResult() {
+		System.out.println("===두수의 사칙연산 결과===");
+		Plus();
+		Minus();
+		Mult();
+		Divide();
+	}
 }
