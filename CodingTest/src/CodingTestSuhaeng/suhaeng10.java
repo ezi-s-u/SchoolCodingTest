@@ -8,14 +8,17 @@ public class suhaeng10 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("영문자 입력 : ");
-		String str = sc.next();
+		String str = sc.nextLine();
 		char ch[] = new char[str.length()];
 				
 		for(int i = ch.length-1, j = 0; i >= 0; i--, j++) {
 			ch[j]= str.charAt(i);
 		}
 		
-		System.out.print("변환된 문자 : "+ch.toString());
+		System.out.print("변환된 문자 : ");
+		for(int i = 0; i < ch.length; i++) {
+			System.out.print(ch[i]);
+		}
 	}
 
 }
