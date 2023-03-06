@@ -16,3 +16,11 @@ public class suhaeng9 {
 	}
 
 }
+
+class Calculate {
+	int a, b;
+	Calculate(int a1, int a2) {
+		a = a1;
+		b = a2;
+	}
+}
