@@ -5,8 +5,8 @@ public class suhaeng12 {
 	public static void main(String[] args) {
 		Rectangle t1 = new Rectangle(1,1,3,3);
 		t1.showRectangle();
-		//System.out.pritnln("사각형의 둘레: "+t1.getRound());
-		//System.out.pritnln("사각형의 넓이: "+t1.getArea());
+		System.out.println("사각형의 둘레: "+t1.getRound());
+		System.out.println("사각형의 넓이: "+t1.getArea());
 	}
 
 }
@@ -22,5 +22,11 @@ class Rectangle {
 	void showRectangle() {
 		System.out.println("사각형의 좌표는 왼쪽 위 (" + x1 +","+y1+")");
 		System.out.println("사각형의 좌표는 오른쪽 아래 (" + x2 +","+y2+")");
+	}
+	int getRound() {
+		return 2*(x2-x1) + 2*(y2-y1);
+	}
+	int getArea() {
+		return (x2-x1)*(y2-y1);
 	}
 }
